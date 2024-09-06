@@ -8,4 +8,6 @@ use sql_store;
 -- 	points+10 as "points increased" 
 -- from customers;
 -- select * from customers
-select state from customers;
+select district from customers;
+select * from customers
+limit 5;
