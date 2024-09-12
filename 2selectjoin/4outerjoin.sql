@@ -21,3 +21,18 @@ on o.customer_id = c.customer_id
 -- FROM customers c
 -- right join orders o
 -- on o.customer_id = c.customer_id
+
+-- uzdevums
+-- atlasīt produktus un pasūtījuma vienības
+-- ta lai tiktu atlasīti visi produkti
+-- arī tādo kiro nav pasūtīti
+
+use sql_hr;
+SELECT 
+    *
+FROM
+    products p
+         left JOIN
+    order_items oi USING (product_id)
+
+
