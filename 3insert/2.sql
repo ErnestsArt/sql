@@ -1,0 +1,16 @@
+use sql_store;
+
+insert into orders 
+(customer_id, order_date, status)
+values(11,'2019-01-01', 3);
+
+
+-- select * from orders;
+-- select last_insert_id();
+
+insert into order_items
+values
+		(Last_insert_id(), 1, 2, 19.35),
+        (Last_insert_id), 2, 3, 5);
+        
+        select * from order_items;
